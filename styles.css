@@ -59,7 +59,7 @@ body, html {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Create columns with minimum width of 200px */
-    gap: 0px; /* Add gap between images */
+    gap: 8px; /* Add gap between images */
   }
 
   .grid img {
@@ -92,7 +92,6 @@ body, html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    z-index: 999;
   }
   img:hover {
     transform: scale(1.05);
