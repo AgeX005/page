@@ -53,7 +53,7 @@ body, html {
   }
   .main-content p:hover{
     color: #9a8c98;
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 
   .grid {
