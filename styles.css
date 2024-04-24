@@ -28,7 +28,7 @@ body, html {
     transition: width 1s ease;
   }
   .sidebar:hover{
-    width: 200px;
+    width: 175px;
     height: 100%;
     background-color: #22223b;
     color: #f2e9e4;
