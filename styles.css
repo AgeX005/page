@@ -1,4 +1,5 @@
 body, html {
+  animation: animateOnLoad 1s ease forwards;
   font-family: 'Roboto', sans-serif;
   background-color: #4a4e69;
   color: #f2e9e4;
@@ -10,20 +11,38 @@ body, html {
   .container {
     display: flex;
     height: 100%;
+    justify-content: center;
+    
   }
   
   .sidebar {
+    animation: animateOnLoad 1s ease forwards;
     width: 150px;
+    height: 100%;
     background-color: #22223b;
     color: #f2e9e4;
     padding: 20px;
     padding-right: 50px;
     padding-left: 25px;
+    overflow-y: auto;
+    transition: width 1s ease;
+  }
+  .sidebar:hover{
+    width: 300px;
+    height: 100%;
+    background-color: #22223b;
+    color: #f2e9e4;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 25px;
+    overflow-y: auto;
   }
   
   .main-content {
     flex: 1;
     padding: 20px;
+    overflow-y: auto;
+    text-align: justify;
   }
 
   a {
@@ -38,9 +57,41 @@ body, html {
     /* Optionally change color on hover */
     color: #c9ada7;
   }
-  
+
+  img {
+
+    transition: transform 0.5s ease ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img:hover {
+    transform: scale(1.05);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .bottom-text {
     position: absolute;
     bottom: 10px;
+  }
+
+  
+  @keyframes rotateAnimation {
+    0% {transform: rotate(-2deg);}
+    100% {
+      width: 50.5%;
+      transform: rotate(2deg);
+    }
+  }
+  @keyframes animateOnLoad {
+    from {
+      opacity: 0%;
+      transform: scale(1.1);
+    }
+    to {
+      opacity: 100%;
+      transform: scale(1);
+    }
   }
