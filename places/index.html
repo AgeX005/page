@@ -1,0 +1,197 @@
+<html>
+	
+	<!-- 
+	Que ondas como andamos?
+	Desvelados, Cansados. Con hambre
+	
+	Ya va. Deemole, recio, recio
+	Como q voy a pasar al escenario jaja
+	Buenas noches compañeritos. Mi nombre es Angel Ricardo. de caurto B
+	A mí me toco exponer sobre la programación..
+	
+	Dudas?...
+	
+	Bueno. Aqui tengo mis notas. Vengo preparado
+	https://quickref.me/css3.html
+	
+	Eem. Primero
+	Aclaraciones:
+	No soy experto, igual que los demás, apenas voy aprendiendo. 
+	Hay cosas que tampoco sé o entiendo. Pero igual, todo está en intenet. Si sale algo, pues ahi miramos.
+	Recorda que nada es tan dificil como parece, solo hace nos falta dedicarle más tiempo.
+	
+	Vs como estás con esto? para saber si saltarme cosas o explicar asi toodo todo [...]
+	
+	Lo voy a explicar así de compas, entonces cualquier cosa, me decis o me preguntas.
+	
+	Estooo, no es tan complejo
+	Asi que tranquilos, respiren, no va a doler.
+	son bromas
+	Yo pienso que es sencillo, todo depende de la paciencia y la forma en que te lo explican.
+	Yo lo explico como yo hubiera querido. Cosas que entendí despues de varios errores.
+	
+	Ah. Un punto importante acá... Como crees que estás en inglés? [...]
+	Recordar que con todo esto, hay una cosa muy importante... Y es el ingés
+	Ya que absolutamente todo está en inglés
+	todas las etiquetas son abreviaciones de cosas en inglés. [...]
+	Incluso... Yo digo que alguien que habla inglés y no sabe nada de programación, solo con leer el codigo ya puede saber más o menos que hace. O al menos darse una idea
+	De todas formas yo acá wa ir traduciendo cosas.
+	
+	Yyy...
+	Si se siente que me extiendo mucho en algo que parezca obvio, me callás acá un cachetazo virtual. 
+	Pero tampoco siendo groseros pq los voy a sacar del salón alv
+	
+	Yo creo q ya está todo cubierto
+	-->
+
+
+	<!-- 
+	Lo más básico:
+	Al igual que nosotros, la computadora  lee el código de cualquier programa de izq a der, de arriba a abajo y palabra por palabra
+	Ej.
+	
+	<body> 
+		
+		Esto es texto dentro del cuerpo de la pag...
+		
+		<p> Esto es texto mostrado como párrafo </p>
+		
+		<h1> Encabezado 1 </h1>
+		<h2> Encabezado 2 </h2>
+		<h3> Encabezado 3 </h3>
+		
+	</body>
+	Entonces... Esa es la forma en que se ejecuta el código.
+	
+	El navegador intenta mostrar todos los fotogramas que puede. En cada fotograma, primero se lee el codigo y luego se muestra
+	El código de abajo sobreescribe el de arriba 
+	-->
+	
+	<!-- 
+	La mayoria de cosas se pueden hacer de varias formas, entonces, lo mejor es agarrar una y apegarse a ella.
+	Todo es como el lenguaje mismo. cada persona tiene su forma de hablar y escribir en la que se sienten cómodos.
+	Entonces, hay que recordar que hasta los maestros no tienen la verdad absoluta. Siempre podemos tener criterio propio y hasta estar en desacuerdo con ellos.  
+	Excepto conmigo va. A mi si haganme caso xd
+	Ahí el que me discuta también lo saco alv
+	
+	Todas las páginas web podemos usar 4 lenguajes:
+	HTML: Para crear la estructura y el contenido. Solo texto, imagenes, videos y audio. Asi todo pelao, sin chiste ni na.
+	CSS: Para darle colores, posiciones, tamaños, animaciones, etc. Todo lo que tiene que ver con la parte visual del diseño.
+	
+	
+	JavaScript: Para crear cosas interactivas y dinámicas en la página. Pongamoslo así: una pc con Windows puede ejecutar programas creados con c, c++,
+	c#, phyton, java, Assembly, etc. Hay un cuentaso de lenguajes de programación.
+	Pero los navegadores web (Chrome, Edge, Firefox, Explorer, Opera) solo pueden ejecutar JavaScript.
+	
+	PHP: Es otro lenguaje de programación, pero este lo ejecuta el servidor. Este es el que interactúa con bases de datos, procesar formularios 
+	y puede generar páginas web con informacion distinta para cada persona. Ejemplo: Cuando inicias sesion en google, se usa PHP para solicitar informacion a la 
+	base de datos de Google y ya te devuelve todos los datos de tu cuenta. Se podria decir que PHP es el intermediario entre el servidor y el navegador.
+	
+	Diferencias entre JavaScript y PHP? Para ponerlo simple,
+	JavaScript: Solo se ejecuta en tu navegador web. 
+	PHP: Solo se ejecuta en el servidor.
+	Entonces, si, hay cosas que se pueden hacer tanto con PHP como con JavaScript
+	Pero PHP generalmenrte solo se usa para procesar datos en el servidor y devolverlos a nosotros 
+	En JavaScript por otro lado se pueden hacer muchas más cosas. Como por ejemplo crear videojuegos. 
+	
+	CRONOLOGIA:
+	Estructura básica de un archivo HTML
+	<html>
+		<head>
+		
+		</head>
+		
+		<body>
+		
+		</body>
+	</html>
+	
+	
+	
+	Hay 3 formas de agregar css en un archivo html: 
+	1. Etiqueta <style>
+	2. Hacer referencia al archivo css dentro de <head> 
+	3. Propiedad style="" dentro de cada etiqueta
+	
+	-->
+    <style>
+	
+		/* Esto es un comentario en css */
+		
+		
+		* {
+			padding: 20px;
+			
+			/*seleccionar una forma*/
+			border: 2px solid;
+			
+			border-width: 2px;
+			border-style: solid;
+		}
+		
+		html {
+			margin: 0px;
+			border-color: red;
+		}
+		
+		
+		body{
+			border-color: orange;
+		}
+		
+		.contenedor{
+			border-color: green;
+		}
+	
+		.contenedor img{
+			width: 100px;
+			height: 100px;
+			object-fit: cover; /*Muy util*/
+			margin:0px;
+			padding: 0px;
+		}
+
+    </style>
+
+
+
+
+    <head>
+		<!-- Esto es un comentario en html -->
+        <!--Aquí solo va informacion sobre la página, referencias a otros archivos utilizados y cosas que no se ven en la pag en sí-->
+        <title>
+            Titulo de pestaña
+        </title>
+
+    </head>
+
+
+    <body>
+		<!-- Aquí va todo lo que se va a mostrar en la pestaña -->
+        Cuerpo (body)
+		
+		<div class= "contenedor">
+			Contenedor (contenedor)
+			
+			<h1>
+				Titulo 1 dentro de contenedor (h1)
+			</h1>
+			
+			<p>
+				Parrafo dentro de contenedor (p)
+			</p>
+			
+			
+			<img src="https://th.bing.com/th/id/OIP.a_DI6ltWO-IInU-Sg29xnAAAAA?rs=1&pid=ImgDetMain">
+			
+			<img src="https://th.bing.com/th/id/R.428d586766d7d899001fe18caf35fb42?rik=W2PLvJpETk4Cfw&pid=ImgRaw&r=0">
+			
+			<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=QR_PERRÓN">
+			
+		</div>
+
+    </body>
+
+
+
+</html>
